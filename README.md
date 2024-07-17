@@ -11,3 +11,5 @@
 ## Descripción del proyecto
 > El proyecto cuenta con 4 páginas: Inicio, clientes, líneas telefónicas y planes.
 > El proyecto fue hecho con PHP, HTML, CSS (boostrap) y CodeIgniter 4.
+> La URL local utilizada es: 'http://localhost/fs2024/ci4_telefonia/public/'.
+> La base de datos utilizada tiene el nombre: fs2024_telefonia
