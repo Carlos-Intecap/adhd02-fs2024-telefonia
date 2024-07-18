@@ -13,9 +13,9 @@
             <div class="col col-4 text-center">
                 <h1>Base de datos - Telefonía</h1>
                 <div class="list-group">
-                    <a href="ver_clientes" class="list-group-item list-group-item-action list-group-item-secondary">Clientes</a>
-                    <a href="ver_lineas" class="list-group-item list-group-item-action list-group-item-secondary">Líneas Telefónicas</a>
-                    <a href="ver_planes" class="list-group-item list-group-item-action list-group-item-secondary">Planes</a>
+                    <a href="clientes" class="list-group-item list-group-item-action list-group-item-secondary">Clientes</a>
+                    <a href="lineas" class="list-group-item list-group-item-action list-group-item-secondary">Líneas Telefónicas</a>
+                    <a href="planes" class="list-group-item list-group-item-action list-group-item-secondary">Planes</a>
                 </div>
             </div>
         </div>

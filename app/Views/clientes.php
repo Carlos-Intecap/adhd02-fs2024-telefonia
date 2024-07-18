@@ -13,16 +13,19 @@
                 <a class="nav-link" href="<?php echo base_url('/');?>">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="<?php echo base_url('ver_clientes');?>">Clientes</a>
+                <a class="nav-link active" aria-current="page" href="<?php echo base_url('clientes');?>">Clientes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('ver_lineas');?>">Líneas telefónicas</a>
+                <a class="nav-link" href="<?php echo base_url('lineas');?>">Líneas telefónicas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('ver_planes');?>">Planes</a>
+                <a class="nav-link" href="<?php echo base_url('planes');?>">Planes</a>
             </li>
         </ul>
         <h1 class="text-center">Clientes</h1>
+
+        <a href="nuevo_cliente" class="btn btn-primary">Nuevo Cliente</a>
+
         <table class="table table-border table-striped">
             <thead>
                 <tr>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lineas Telefonicas</title>
+    <title>Líneas Telefónicas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
@@ -13,16 +13,19 @@
                 <a class="nav-link" href="<?php echo base_url('/');?>">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('ver_clientes');?>">Clientes</a>
+                <a class="nav-link" href="<?php echo base_url('clientes');?>">Clientes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="<?php echo base_url('ver_lineas');?>">Líneas telefónicas</a>
+                <a class="nav-link active" aria-current="page" href="<?php echo base_url('lineas');?>">Líneas telefónicas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('ver_planes');?>">Planes</a>
+                <a class="nav-link" href="<?php echo base_url('planes');?>">Planes</a>
             </li>
         </ul>
-        <h1 class="text-center">Lineas Telefonicas</h1>
+        <h1 class="text-center">Líneas Telefónicas</h1>
+
+        <a href="nueva_linea" class="btn btn-primary">Nueva Línea Telefónica</a>
+
         <table class="table table-border table-striped">
             <thead>
                 <tr>
