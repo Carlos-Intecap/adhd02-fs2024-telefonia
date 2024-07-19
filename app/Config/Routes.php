@@ -15,3 +15,7 @@ $routes->post('agregar_plan','PlanesController::agregarPlan');
 $routes->get('nuevo_plan','PlanesController::nuevoPlan');
 $routes->post('agregar_linea','LineasTelefonicasController::agregarLinea');
 $routes->get('nueva_linea','LineasTelefonicasController::nuevaLinea');
+
+$routes->get('eliminar_plan/(:num)','PlanesController::eliminarPlan/$1');
+
+$routes->get('eliminar_cliente/(:num)','ClientesController::eliminarCliente/$1');

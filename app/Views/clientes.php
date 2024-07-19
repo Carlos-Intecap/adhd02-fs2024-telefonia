@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
         <ul class="nav nav-tabs justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url('/');?>">Inicio</a>
@@ -30,12 +30,10 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Apellido</th>
                     <th>Nombre</th>
-                    <th>Correo</th>
-                    <th>Calle/Avenida</th>
-                    <th>No. Casa</th>
-                    <th>Zona</th>
+                    <th>Correo Electrónico</th>
+                    <th>Dirección</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -44,12 +42,17 @@
               ?>
                 <tr>
                     <td><?php echo $cliente['cliente_id'];?></td>
-                    <td><?php echo $cliente['apellido'];?></td>
-                    <td><?php echo $cliente['nombre'];?></td>
+                    <td><?php echo $cliente['nombre']." ".$cliente['apellido'];?></td>
                     <td><?php echo $cliente['correo_electronico'];?></td>
-                    <td><?php echo $cliente['calle_avenida'];?></td>
-                    <td><?php echo $cliente['no_casa'];?></td>
-                    <td><?php echo $cliente['zona'];?></td>
+                    <td>
+                        <?php echo $cliente['calle_avenida'].
+                        " ".$cliente['no_casa'].
+                        " Zona ".$cliente['zona'];?>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-info">Actualizar</a>
+                        <a href="eliminar_cliente/<?php echo $cliente['cliente_id']?>" class="btn btn-danger">Eliminar</a>
+                    </td>
                 </tr>
                 <?php
                 endforeach;
