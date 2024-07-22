@@ -12,23 +12,23 @@
         <form action="agregar_linea" method="post">
             <div class="mb-8">
                 <label for="txtTelefono" class="form-label">No. Teléfono</label>
-                <input type="text" id="txtTelefono" name="txtTelefono" class="form-control" placeholder="Ingrese no. teléfono">
+                <input type="number" id="txtTelefono" name="txtTelefono" class="form-control" placeholder="Ingrese no. teléfono">
             </div>
             <div class="mb-8">
                 <label for="txtFechaPago" class="form-label">Fecha de pago</label>
-                <input type="text" id="txtFechaPago" name="txtFechaPago" class="form-control" placeholder="Ingrese fecha de pago">
+                <input type="date" id="txtFechaPago" name="txtFechaPago" class="form-control" placeholder="Ingrese fecha de pago">
             </div>
             <div class="mb-8">
                 <label for="txtMeses" class="form-label">Meses de atraso</label>
-                <input type="text" id="txtMeses" name="txtMeses" class="form-control" placeholder="Ingrese meses de atraso">
+                <input type="number" id="txtMeses" name="txtMeses" class="form-control" placeholder="Ingrese meses de atraso">
             </div>
             <div class="mb-8">
                 <label for="txtPlanId" class="form-label">Id Plan</label>
-                <input type="text" id="txtPlanId" name="txtPlanId" class="form-control" placeholder="Ingrese el id del plan">
+                <input type="number" id="txtPlanId" name="txtPlanId" class="form-control" placeholder="Ingrese el id del plan">
             </div>
             <div class="mb-8">
                 <label for="txtClienteId" class="form-label">Id Cliente</label>
-                <input type="text" id="txtClienteId" name="txtClienteId" class="form-control" placeholder="Ingrese el id del cliente">
+                <input type="number" id="txtClienteId" name="txtClienteId" class="form-control" placeholder="Ingrese el id del cliente">
             </div>
             <div class="mb-8">
                 <input type="submit" class="btn btn-primary" value="Guardar" id="btGuardar" name="btnGuardar">

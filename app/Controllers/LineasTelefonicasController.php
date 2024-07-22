@@ -29,4 +29,11 @@ class LineasTelefonicasController extends BaseController
         echo "Datos guardados";
         return redirect()->route('lineas');
     }
+
+    public function eliminarLinea($id=null)
+    {
+        $lineas = new LineasTelefonicasModel();
+        $lineas->delete(['no_telefono'=>$id]);
+        return redirect()->route('lineas');
+    }
 }

@@ -12,7 +12,7 @@
         <form action="agregar_plan" method="post">
             <div class="mb-8">
                 <label for="txtPlanId" class="form-label">Plan Id</label>
-                <input type="text" id="txtPlanId" name="txtPlanId" class="form-control" placeholder="Ingrese id">
+                <input type="number" id="txtPlanId" name="txtPlanId" class="form-control" placeholder="Ingrese id">
             </div>
             <div class="mb-8">
                 <label for="txtNombre" class="form-label">Nombre</label>
@@ -20,15 +20,15 @@
             </div>
             <div class="mb-8">
                 <label for="txtPagoMensual" class="form-label">Pago mensual</label>
-                <input type="text" id="txtPagoMensual" name="txtPagoMensual" class="form-control" placeholder="Ingrese pago mensual">
+                <input type="number" id="txtPagoMensual" name="txtPagoMensual" class="form-control" placeholder="Ingrese pago mensual">
             </div>
             <div class="mb-8">
                 <label for="txtMinutos" class="form-label">Cantidad de minutos</label>
-                <input type="text" id="txtMinutos" name="txtMinutos" class="form-control" placeholder="Ingrese cantidad de minutos">
+                <input type="number" id="txtMinutos" name="txtMinutos" class="form-control" placeholder="Ingrese cantidad de minutos">
             </div>
             <div class="mb-8">
                 <label for="txtMensajes" class="form-label">Cantidad de mensajes</label>
-                <input type="text" id="txtMensajes" name="txtMensajes" class="form-control" placeholder="Ingrese cantidad de mensajes">
+                <input type="number" id="txtMensajes" name="txtMensajes" class="form-control" placeholder="Ingrese cantidad de mensajes">
             </div>
             <div class="mb-8">
                 <input type="submit" class="btn btn-primary" value="Guardar" id="btGuardar" name="btnGuardar">

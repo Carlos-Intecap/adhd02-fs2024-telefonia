@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
         <ul class="nav nav-tabs justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url('/');?>">Inicio</a>
@@ -46,6 +46,10 @@
                     <td><?php echo $plan['pago_mensual'];?></td>
                     <td><?php echo $plan['cantidad_minutos'];?></td>
                     <td><?php echo $plan['cantidad_mensajes'];?></td>
+                    <td>
+                        <a href="" class="btn btn-info">Actualizar</a>
+                        <a href="eliminar_plan/<?php echo $plan['plan_id']?>" class="btn btn-danger">Eliminar</a>
+                    </td>
                 </tr>
                 <?php
                 endforeach;

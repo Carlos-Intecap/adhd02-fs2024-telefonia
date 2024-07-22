@@ -12,7 +12,7 @@
         <form action="agregar_cliente" method="post">
             <div class="mb-8">
                 <label for="txtId" class="form-label">Id</label>
-                <input type="text" id="txtId" name="txtId" class="form-control" placeholder="Ingrese id">
+                <input type="number" id="txtId" name="txtId" class="form-control" placeholder="Ingrese id">
             </div>
             <div class="mb-8">
                 <label for="txtNombre" class="form-label">Nombre</label>
@@ -24,7 +24,7 @@
             </div>
             <div class="mb-8">
                 <label for="txtCorreo" class="form-label">Correo electrónico</label>
-                <input type="text" id="txtCorreo" name="txtCorreo" class="form-control" placeholder="Ingrese correo electrónico">
+                <input type="email" id="txtCorreo" name="txtCorreo" class="form-control" placeholder="Ingrese correo electrónico">
             </div>
             <div class="mb-8">
                 <label for="txtCalleAvenida" class="form-label">Calle o avenida</label>
@@ -36,7 +36,7 @@
             </div>
             <div class="mb-8">
                 <label for="txtZona" class="form-label">Zona</label>
-                <input type="text" id="txtZona" name="txtZona" class="form-control" placeholder="Ingrese zona">
+                <input type="number" id="txtZona" name="txtZona" class="form-control" placeholder="Ingrese zona">
             </div>
             <div class="mb-8">
                 <input type="submit" class="btn btn-primary" value="Guardar" id="btGuardar" name="btnGuardar">

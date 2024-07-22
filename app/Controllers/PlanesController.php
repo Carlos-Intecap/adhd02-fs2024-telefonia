@@ -29,4 +29,11 @@ class PlanesController extends BaseController
         echo "Datos guardados";
         return redirect()->route('planes');
     }
+
+    public function eliminarPlan($id=null)
+    {
+        $planes = new PlanesModel();
+        $planes->delete(['plan_id'=>$id]);
+        return redirect()->route('planes');
+    }
 }
