@@ -26,19 +26,36 @@ class ClientesController extends BaseController
             'no_casa' => $this->request->getVar('txtNoCasa'),
             'zona' => $this->request->getVar('txtZona')
         ];
-        print_r($datos);
+        //print_r($datos);
         //crear objeto de tipo ClientesModel
         $clientes = new ClientesModel();
         $clientes->insert($datos); //insert into cliente values(...);
-        echo "Datos guardados";
+        //echo "Datos guardados";
         return redirect()->route('clientes');
     }
-
     public function eliminarCliente($id=null)
     {
-        //echo $id;
         $clientes = new ClientesModel();
         $clientes->delete(['cliente_id'=>$id]);
+        return redirect()->route('clientes');
+    }
+    public function buscarCliente($id=null){
+        $clientes = new ClientesModel();
+        $datos['datos']=$clientes->where('cliente_id',$id)->first();
+        return view('form_modificar_cliente',$datos);
+    }
+    public function modificarCliente(){
+        $datos=[
+            'cliente_id'=>$this->request->getVar('txtClienteId'),
+            'apellido'=>$this->request->getVar('txtApellido'),
+            'nombre'=>$this->request->getVar('txtNombre'),
+            'correo_electronico'=>$this->request->getVar('txtCorreo'),
+            'calle_avenida'=>$this->request->getVar('txtCalle'),
+            'no_casa'=>$this->request->getVar('txtNoCasa'),
+            'zona'=>$this->request->getVar('txtZona')
+        ];
+        $clientes = new ClientesModel();
+        $clientes->update($datos['cliente_id'],$datos);
         return redirect()->route('clientes');
     }
 }

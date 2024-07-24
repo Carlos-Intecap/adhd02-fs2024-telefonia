@@ -13,7 +13,7 @@
 <body class="bg-body-secondary">
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fs-5" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="<?=base_url('/')?>"><i class="bi bi-menu-button-wide-fill"></i> Inicio</a>
+            <a class="navbar-brand" href="<?=base_url('/')?>"><i class="bi bi-telephone"></i> Inicio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">

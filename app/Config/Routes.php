@@ -26,5 +26,10 @@ $routes->get('eliminar_cliente/(:num)','ClientesController::eliminarCliente/$1')
 $routes->get('eliminar_linea/(:num)','LineasTelefonicasController::eliminarLinea/$1');
 $routes->get('eliminar_plan/(:num)','PlanesController::eliminarPlan/$1');
 
+//ACTUALIZAR
+$routes->get('buscar_cliente/(:num)','ClientesController::buscarCliente/$1');
+$routes->post('modificar_cliente','ClientesController::modificarCliente');
+$routes->get('buscar_linea/(:num)','LineasTelefonicasController::buscarLinea/$1');
+$routes->post('modificar_linea','LineasTelefonicasController::modificarLinea');
 $routes->get('buscar_plan/(:num)','PlanesController::buscarPlan/$1');
 $routes->post('modificar_plan','PlanesController::modificarPlan');

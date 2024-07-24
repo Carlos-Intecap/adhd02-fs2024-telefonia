@@ -26,7 +26,7 @@ class PlanesController extends BaseController
         ];
         $planes = new PlanesModel();
         $planes->insert($datos);
-        echo "Datos guardados";
+        //echo "Datos guardados";
         return redirect()->route('planes');
     }
     public function eliminarPlan($id=null){

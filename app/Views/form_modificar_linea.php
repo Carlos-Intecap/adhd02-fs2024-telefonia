@@ -15,41 +15,41 @@
         <div class="row">
             <div class="col">
                 <h1>Modificar Plan</h1>
-                <form action="<?=base_url('modificar_plan')?>" method="post">
+                <form action="<?=base_url('modificar_linea')?>" method="post">
                     <div class="md-3">
-                        <label for="txtPlanId" class="form-label">Id</label>
-                        <input type="text" id="txtPlanId" name="txtPlanId" class="form-control"
-                            placeholder="Ingrese id del plan"
-                            value="<?=$datos['plan_id'];?>"
+                        <label for="txtTelefono" class="form-label">No. Teléfono</label>
+                        <input type="number" id="txtTelefono" name="txtTelefono" class="form-control"
+                            placeholder="Ingrese no. de teléfono"
+                            value="<?=$datos['no_telefono'];?>"
                             readonly
                             >
                     </div>
                     <div class="mb-3">
-                        <label for="txtNombre" class="form-label">Nombre</label>
-                        <input type="text" id="txtNombre" name="txtNombre" class="form-control"
-                        placeholder="Ingrese nombre del plan"
-                        value="<?=$datos['nombre'];?>"
+                        <label for="txtFechaPago" class="form-label">Fecha de pago</label>
+                        <input type="number" id="txtFechaPago" name="txtFechaPago" class="form-control"
+                        placeholder="Ingrese fecha de pago"
+                        value="<?=$datos['fecha_pago'];?>"
                         >
                     </div>
                     <div class="mb-3">
-                        <label for="txtPago" class="form-label">Pago mensual</label>
-                        <input type="text" id="txtPago" name="txtPago" class="form-control"
+                        <label for="txtMeses" class="form-label">Meses de atraso</label>
+                        <input type="number" id="txtMeses" name="txtMeses" class="form-control"
                         placeholder="Ingrese pago mensual"
-                        value="<?=$datos['pago_mensual'];?>"
+                        value="<?=$datos['meses_atraso'];?>"
                         >
                     </div>
                     <div class="mb-3">
-                        <label for="txtMinutos" class="form-label">Cantidad de minutos</label>
-                        <input type="text" id="txtMinutos" name="txtMinutos" class="form-control"
-                        placeholder="Ingrese cantidad de minutos"
-                        value="<?=$datos['cantidad_minutos'];?>"
+                        <label for="txtPlanId" class="form-label">Id Plan</label>
+                        <input type="number" id="txtPlanId" name="txtPlanId" class="form-control"
+                        placeholder="Ingrese ID del plan"
+                        value="<?=$datos['plan_id'];?>"
                         >
                     </div>
                     <div class="mb-3">
-                        <label for="txtMensajes" class="form-label">Cantidad de mensajes</label>
-                        <input type="text" id="txtMensajes" name="txtMensajes" class="form-control"
-                        placeholder="Ingrese cantidad de mensajes"
-                        value="<?=$datos['cantidad_mensajes'];?>"
+                        <label for="txtClienteId" class="form-label">Id Cliente</label>
+                        <input type="number" id="txtClienteId" name="txtClienteId" class="form-control"
+                        placeholder="Ingrese ID del cliente"
+                        value="<?=$datos['cliente_id'];?>"
                         >
                     </div>
                     <div class="mb-3">

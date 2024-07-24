@@ -1,0 +1,118 @@
+CRITICAL - 2024-07-24 14:39:10 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\fs2024\ci4_telefonia\app\Config\Routes.php on line 30 and at least 2 expected
+[Method: GET, Route: clientes]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(30): CodeIgniter\Router\RouteCollection->get('buscar_cliente(:num)ClientesController::buscarCliente/$1')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-24 14:39:39 --> ErrorException: Undefined variable $plan
+[Method: GET, Route: clientes]
+in APPPATH\Views\clientes.php on line 67.
+ 1 APPPATH\Views\clientes.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plan', 'C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\clientes.php', 67)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('clientes', [], true)
+ 5 APPPATH\Controllers\ClientesController.php(11): view('clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClientesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-24 15:11:02 --> ErrorException: Undefined array key "_atraso"
+[Method: GET, Route: buscar_linea/41407115]
+in APPPATH\Views\form_modificar_linea.php on line 38.
+ 1 APPPATH\Views\form_modificar_linea.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "_atraso"', 'C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\form_modificar_linea.php', 38)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\form_modificar_linea.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('form_modificar_linea', [], true)
+ 5 APPPATH\Controllers\LineasTelefonicasController.php(42): view('form_modificar_linea', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->buscarLinea('41407115')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-24 15:12:08 --> Error: Class "App\Controllers\LineasModel" not found
+[Method: POST, Route: modificar_linea]
+in APPPATH\Controllers\LineasTelefonicasController.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->modificarLinea()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-24 15:12:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fs2024_telefonia`.`lineas_telefonicas`, CONSTRAINT `lineas_telefonicas_ibfk_1` FOREIGN KEY (`plan_id`) REFERENCES `planes` (`plan_id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `lineas_...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `lineas_...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `lineas_...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2508): CodeIgniter\Database\BaseConnection->query('UPDATE `lineas_...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\LineasTelefonicasController.php(53): CodeIgniter\Model->update('41407115', Array)
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->modificarLinea()
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-07-24 15:12:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`fs2024_telefonia`.`lineas_telefonicas`, CONSTRAINT `lineas_telefonicas_ibfk_1` FOREIGN KEY (`plan_id`) REFERENCES `planes` (`plan_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[Method: POST, Route: modificar_linea]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2508): CodeIgniter\Database\BaseConnection->query('UPDATE `lineas_telefonicas` SET `no_telefono` = :no_telefono:, `fecha_pago` = :fecha_pago:, `meses_atraso` = :meses_atraso:, `plan_id` = :plan_id:, `cliente_id` = :cliente_id:
+WHERE `lineas_telefonicas`.`no_telefono` IN :lineas_telefonicas.no_telefono:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\LineasTelefonicasController.php(53): CodeIgniter\Model->update('41407115', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->modificarLinea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-24 15:12:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`fs2024_telefonia`.`lineas_telefonicas`, CONSTRAINT `lineas_telefonicas_ibfk_1` FOREIGN KEY (`plan_id`) REFERENCES `planes` (`plan_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `lineas_telefonicas` SET `no_telefono` = \'41407115\', `fecha_pago` = \'25\', `meses_atraso` = \'9\', `plan_id` = \'10\', `cliente_id` = \'20\'
+WHERE `lineas_telefonicas`.`no_telefono` IN (\'41407115\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `lineas_telefonicas` SET `no_telefono` = \'41407115\', `fecha_pago` = \'25\', `meses_atraso` = \'9\', `plan_id` = \'10\', `cliente_id` = \'20\'
+WHERE `lineas_telefonicas`.`no_telefono` IN (\'41407115\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2508): CodeIgniter\Database\BaseConnection->query('UPDATE `lineas_telefonicas` SET `no_telefono` = :no_telefono:, `fecha_pago` = :fecha_pago:, `meses_atraso` = :meses_atraso:, `plan_id` = :plan_id:, `cliente_id` = :cliente_id:
+WHERE `lineas_telefonicas`.`no_telefono` IN :lineas_telefonicas.no_telefono:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\LineasTelefonicasController.php(53): CodeIgniter\Model->update('41407115', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->modificarLinea()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-24 15:12:42 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fs2024_telefonia`.`lineas_telefonicas`, CONSTRAINT `lineas_telefonicas_ibfk_1` FOREIGN KEY (`plan_id`) REFERENCES `planes` (`plan_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `lineas_telefonicas` SET `no_telefono` = \'41407115\', `fecha_pago` = \'25\', `meses_atraso` = \'9\', `plan_id` = \'10\', `cliente_id` = \'20\'
+WHERE `lineas_telefonicas`.`no_telefono` IN (\'41407115\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `lineas_telefonicas` SET `no_telefono` = \'41407115\', `fecha_pago` = \'25\', `meses_atraso` = \'9\', `plan_id` = \'10\', `cliente_id` = \'20\'
+WHERE `lineas_telefonicas`.`no_telefono` IN (\'41407115\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `lineas_telefonicas` SET `no_telefono` = \'41407115\', `fecha_pago` = \'25\', `meses_atraso` = \'9\', `plan_id` = \'10\', `cliente_id` = \'20\'
+WHERE `lineas_telefonicas`.`no_telefono` IN (\'41407115\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2508): CodeIgniter\Database\BaseConnection->query('UPDATE `lineas_telefonicas` SET `no_telefono` = :no_telefono:, `fecha_pago` = :fecha_pago:, `meses_atraso` = :meses_atraso:, `plan_id` = :plan_id:, `cliente_id` = :cliente_id:
+WHERE `lineas_telefonicas`.`no_telefono` IN :lineas_telefonicas.no_telefono:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\LineasTelefonicasController.php(53): CodeIgniter\Model->update('41407115', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->modificarLinea()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
