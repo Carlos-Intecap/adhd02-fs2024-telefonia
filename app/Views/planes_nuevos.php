@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Planes</title>
+    <title>Agregar planes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
-  <body>
-    <div class="container">
-        <h1>Planes</h1>
+  <body class="bg-success-subtle">
+    <div class="container col-xl-3">
+        <h1 class="text-center mt-2">Agregar plan</h1>
         <form action="agregar_plan" method="post">
             <div class="mb-8">
                 <label for="txtPlanId" class="form-label">Plan Id</label>
@@ -31,7 +31,7 @@
                 <input type="number" id="txtMensajes" name="txtMensajes" class="form-control" placeholder="Ingrese cantidad de mensajes">
             </div>
             <div class="mb-8">
-                <input type="submit" class="btn btn-primary" value="Guardar" id="btGuardar" name="btnGuardar">
+                <input type="submit" class="btn btn-success form-control mt-2" value="Guardar" id="btGuardar" name="btnGuardar">
             </div>
         </form>
     </div>

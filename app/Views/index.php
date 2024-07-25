@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body class="bg-body-secondary">
+<body class="bg-success-subtle">
 
     <div class="container">
 
         <div class="row justify-content-center m-4">
             <div class="col col-4 text-center">
-                <h1>Base de datos - Telefonía</h1>
+                <h1>Telefonía</h1>
                 <div class="list-group">
                     <a href="clientes" class="list-group-item list-group-item-action">
                         <div class="card">

@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body class="bg-body-secondary">
+<body class="bg-success-subtle">
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fs-5" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="<?=base_url('/')?>"><i class="bi bi-telephone"></i> Inicio</a>
+            <a class="navbar-brand" href="<?=base_url('/')?>"><i class="bi bi-house"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
